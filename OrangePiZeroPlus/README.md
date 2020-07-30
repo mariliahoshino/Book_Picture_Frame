@@ -59,6 +59,7 @@ It will install updates
 2. Agora, para testar se ele funciona, digite a seguinte linha. Substitua **/root/Desktop/Fotos** pelo diretório que contém toda a sua imagem.
 
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos` &
+<br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/009_testeone20200730_184838.jpg?raw=true"   height="300" >
 
 Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito mais curto. Você pode ler mais sobre todas as bandeiras que você pode usar na página de manual feh, ou usar normalmente a de cima
@@ -74,6 +75,7 @@ Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito
 6. Aqui, digite as seguintes linhas.
 `#!/bin/bash`
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos`
+<br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/010_filesh_20200730_185613.jpg?raw=true"   height="300" >
 
 Ctrl + X ->  Y  -> enter
@@ -83,6 +85,7 @@ Ctrl + X ->  Y  -> enter
 
 **Configurando para iniciar junto com o SO**
 Aplication --> Settings --> Session and Startup
+<br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/011_startup20200730_185910.jpg?raw=true"   height="300" >
 
 
@@ -92,7 +95,7 @@ Clicar em Add
 Vai abrir uma janela
 Name: `Picture_frame`
 Command: `bash /root/start-picture-frame.sh`
-clicar em OK
+clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/012_20200730_190043.jpg?raw=true"   height="300" >
 
 
@@ -101,17 +104,17 @@ clicar em OK
 Clicar em Add
 Name: `dontsleep01`
 Command:  `xset -dpms`
-clicar em OK
+clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/013_20200730_190208.jpg?raw=true"   height="300" >
 
 Clicar em Add
 Name: `dontsleep02` 
 Command: `xset s off`
-clicar em OK
+clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/014_20200730_190251.jpg?raw=true"   height="300" >
 
 
-Deverá ficar assim
+Deverá ficar assim <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/015_20200730_190314.jpg?raw=true"   height="300" >
 
 
