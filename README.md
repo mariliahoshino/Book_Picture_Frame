@@ -17,7 +17,7 @@ Picture and Video Project in Instagram
 https://www.instagram.com/mari.zeniti
 
 In Attiny85
-https://github.com/mariliahoshino/Mouse_USB/tree/master/MouseAttiny85_3_pinos_de_com
+https://github.com/mariliahoshino/Book_Picture_Frame/tree/master/Keyboard_aut
 
 In Orange Pi zero Plus
 http://www.orangepi.org/OrangePiZeroPlus/
