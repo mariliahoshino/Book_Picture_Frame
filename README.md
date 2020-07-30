@@ -20,17 +20,15 @@ In Attiny85
 https://github.com/mariliahoshino/Book_Picture_Frame/tree/master/Keyboard_aut
 
 In Orange Pi zero Plus
-http://www.orangepi.org/OrangePiZeroPlus/
+https://github.com/mariliahoshino/Book_Picture_Frame/tree/master/OrangePiZeroPlus
 
-in cellphone you need install this app
-https://play.google.com/store/apps/details?id=cc.blynk&hl=pt_BR
 
 
 source:
-https://www.filipeflop.com/blog/programar-nodemcu-com-ide-arduino/
 
 Program for extend the partition
 https://gparted.org/
 
 Operator system
+http://www.orangepi.org/OrangePiZeroPlus/
 http://www.orangepi.org/downloadresources/orangepizeroplus/2020-01-16/orangepizeroplus16bb9cbd292207116405.html
