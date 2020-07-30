@@ -30,6 +30,7 @@ Turn off
 Install in laptop with linux
 
 Install **gparted** <br>
+`sudo apt-get install gparted` <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/003instalar_gparted.png?raw=true"   height="300" >
 
 
