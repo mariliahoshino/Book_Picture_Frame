@@ -20,7 +20,7 @@ In Attiny85
 https://github.com/mariliahoshino/Mouse_USB/tree/master/MouseAttiny85_3_pinos_de_com
 
 In Orange Pi zero Plus
-https://github.com/mariliahoshino/Mouse_USB/tree/master/Mouse_blynk_esp12C
+http://www.orangepi.org/OrangePiZeroPlus/
 
 in cellphone you need install this app
 https://play.google.com/store/apps/details?id=cc.blynk&hl=pt_BR
