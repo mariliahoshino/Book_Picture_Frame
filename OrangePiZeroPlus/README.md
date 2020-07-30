@@ -12,9 +12,15 @@
 `sudo reboot`
 -->
 
+### Dowload ISO image in store <br>
+http://www.orangepi.org/downloadresources/orangepizeroplus/2020-01-16/orangepizeroplus16bb9cbd292207116405.html <br>
+
+### Orange Pi zero Pins <br>
+<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/orangepizeropins.jpg?raw=true  height="300" > <br>
+
+
 Burn the SD card with image <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/001_queima_cart%C3%A3o.png?raw=true"   height="300" >
-
 
 Install in Orange Pi zero Plus H5
 
