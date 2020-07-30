@@ -73,43 +73,41 @@ Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito
 
 
 6. Aqui, digite as seguintes linhas.
-`#!/bin/bash`
+`#!/bin/bash` <br>
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos`
 <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/010_filesh_20200730_185613.jpg?raw=true"   height="300" >
 
 Ctrl + X ->  Y  -> enter
 
-7. Agora pronto, você pode testá-lo executando o seguinte comando.
+7. Agora pronto, você pode testá-lo executando o seguinte comando. <br>Irá rodar a exposição de fotos
 `bash /root/start-picture-frame.sh`
 
-**Configurando para iniciar junto com o SO**
+**Configurando para iniciar junto com o SO** <br>
 Aplication --> Settings --> Session and Startup
 <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/011_startup20200730_185910.jpg?raw=true"   height="300" >
 
 
-Aba **Aplication Autostart**
-Clicar em Add
-
-Vai abrir uma janela
-Name: `Picture_frame`
-Command: `bash /root/start-picture-frame.sh`
+Aba **Aplication Autostart** <br>
+Clicar em Add <br>
+Vai abrir uma janela <br>
+Name: `Picture_frame` <br>
+Command: `bash /root/start-picture-frame.sh` <br>
 clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/012_20200730_190043.jpg?raw=true"   height="300" >
 
 
-**Configurando para a tela não desligar**
-
-Clicar em Add
-Name: `dontsleep01`
-Command:  `xset -dpms`
+**Configurando para a tela não desligar** <br>
+Clicar em Add <br>
+Name: `dontsleep01` <br>
+Command:  `xset -dpms` <br>
 clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/013_20200730_190208.jpg?raw=true"   height="300" >
 
-Clicar em Add
-Name: `dontsleep02` 
-Command: `xset s off`
+Clicar em Add <br>
+Name: `dontsleep02` <br>
+Command: `xset s off` <br>
 clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/014_20200730_190251.jpg?raw=true"   height="300" >
 
