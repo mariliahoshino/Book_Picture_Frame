@@ -1,0 +1,13 @@
+#! /bin/sh
+# SCRIPT PARA RESOLUÇÃO =^D
+# SERVE APENAS PARA CRIAR, ADICIONAR E ATIVAR UMA
+#RESOLUÇÃO EM UMA MAQUINA COM AS MEDIDAS DE 1368 X 768
+# FIM DOS COMENTÁRIOS :D
+##xrandr --newmode "1368x768_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+##xrandr --addmode DVI-1 1368x768_60.00
+##xrandr --output DVI-1 --mode 1368x768_60.00
+#configuração cara https://www.informaticode.com.br/criar-uma-nova-resolucao-de-tela-no
+xrandr --newmode "800x480_60.00"   85.25  1368 1440 1576 1784  768 771 781 798 -hsync +vsync
+xrandr --addmode default 800x480_60.00
+xrandr --output default --mode 800x480_60.00
+
