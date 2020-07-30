@@ -41,7 +41,7 @@ Insert again in Orange pi
 
 Turn on
  
-User **root**
+User **root** <br>
 Password **orangepi**
 
 Run the terminal
