@@ -42,46 +42,40 @@ Insert again in Orange pi
 Turn on
  
 User **root** <br>
-Password **orangepi**
+Password **orangepi** <br>
+Run the terminal <br>
+`sudo apt-get update` <br>
+It will install updates <br>
 
-Run the terminal
+**Configurar para auto execução para mostrar as fotos** <br>
+1. Para instalar o pacote, use a seguinte linha: <br>
+`sudo apt-get install feh` <br>
+<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/008_install_feh20200730_183648.jpg?raw=true"   height="300" > <br>
 
-`sudo apt-get update`
-
-It will install updates
-
-
-**Configurar para auto execução para mostrar as fotos**
-1. Para instalar o pacote, use a seguinte linha:
-`sudo apt-get install feh`
-<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/008_install_feh20200730_183648.jpg?raw=true"   height="300" >
-
-2. Agora, para testar se ele funciona, digite a seguinte linha. Substitua **/root/Desktop/Fotos** pelo diretório que contém toda a sua imagem.
+2. Agora, para testar se ele funciona, digite a seguinte linha. Substitua **/root/Desktop/Fotos** pelo diretório que contém toda a sua imagem. <br>
 
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos` &
 <br>
-<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/009_testeone20200730_184838.jpg?raw=true"   height="300" >
+<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/009_testeone20200730_184838.jpg?raw=true"   height="300" > <br>
 
-Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito mais curto. Você pode ler mais sobre todas as bandeiras que você pode usar na página de manual feh, ou usar normalmente a de cima
+Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito mais curto. Você pode ler mais sobre todas as bandeiras que você pode usar na página de manual feh, ou usar normalmente a de cima <br>
 `DISPLAY=:0.0 XAUTHORITY=/home/pi/.Xauthority /usr/bin/feh -q -p -Z -F -R  60 -Y -D 15.0 /root/Desktop/Fotos`  &
 
+4. Agora, como você notará, isso trava a barra da linha de comando. Para corrigir isso, adicione o **&** após o comando e o script / processo será iniciado em segundo plano. <br>
 
-4. Agora, como você notará, isso trava a barra da linha de comando. Para corrigir isso, adicione o **&** após o comando e o script / processo será iniciado em segundo plano.
+5. Então agora vamos armazenar isso em um arquivo de script simples. Dessa forma, você pode adicionar ou alterar posteriormente. Para fazer o arquivo, digite o seguinte comando: <br>
+`sudo nano /root/start-picture-frame.sh` <br>
 
-5. Então agora vamos armazenar isso em um arquivo de script simples. Dessa forma, você pode adicionar ou alterar posteriormente. Para fazer o arquivo, digite o seguinte comando:
-`sudo nano /root/start-picture-frame.sh`
-
-
-6. Aqui, digite as seguintes linhas.
+6. Aqui, digite as seguintes linhas. <br>
 `#!/bin/bash` <br>
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos`
 <br>
-<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/010_filesh_20200730_185613.jpg?raw=true"   height="300" >
+<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/010_filesh_20200730_185613.jpg?raw=true"   height="300" > <br>
 
-Ctrl + X ->  Y  -> enter
+**Ctrl + X** ->  **Y**  -> **enter**
 
-7. Agora pronto, você pode testá-lo executando o seguinte comando. <br>Irá rodar a exposição de fotos
-`bash /root/start-picture-frame.sh`
+7. Agora pronto, você pode testá-lo executando o seguinte comando. <br>Irá rodar a exposição de fotos <br>
+`bash /root/start-picture-frame.sh` <br>
 
 **Configurando para iniciar junto com o SO** <br>
 Aplication --> Settings --> Session and Startup
