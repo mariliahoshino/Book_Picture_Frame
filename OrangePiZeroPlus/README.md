@@ -20,8 +20,8 @@ Install in Orange Pi zero Plus H5
 
 Turn on the orange pi
 
-User root <br>
-Password orangepi <br>
+User **root** <br>
+Password **orangepi** <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/002_primeiro_login20200730_181507.jpg?raw=true"   height="300" >
 
 
@@ -29,31 +29,26 @@ Turn off
 
 Install in laptop with linux
 
-Install gparted <br>
+Install **gparted** <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/003instalar_gparted.png?raw=true"   height="300" >
 
 
 Run the program and extended the memory <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/005_extender_mem20200621_204114.jpg?raw=true"   height="300" >
 
-
-eject the SD card
-
+Eject the SD card
 Insert again in Orange pi
 
-turn on
+Turn on
  
-User root
-Password orangepi
+User **root**
+Password **orangepi**
 
 Run the terminal
 
 `sudo apt-get update`
-<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/008_install_feh20200730_183648.jpg?raw=true"   height="300" >
 
 It will install updates
-
-
 
 
 **Configurar para auto execução para mostrar as fotos**
@@ -82,6 +77,7 @@ Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/010_filesh_20200730_185613.jpg?raw=true"   height="300" >
 
 Ctrl + X ->  Y  -> enter
+
 7. Agora pronto, você pode testá-lo executando o seguinte comando.
 `bash /root/start-picture-frame.sh`
 
@@ -94,7 +90,7 @@ Aba **Aplication Autostart**
 Clicar em Add
 
 Vai abrir uma janela
-Name: Picture_frame
+Name: `Picture_frame`
 Command: `bash /root/start-picture-frame.sh`
 clicar em OK
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/012_20200730_190043.jpg?raw=true"   height="300" >
