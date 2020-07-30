@@ -12,7 +12,9 @@
 `sudo reboot`
 -->
 
-Burn the SD card with image
+Burn the SD card with image <br>
+<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/001_queima_cart%C3%A3o.png?raw=true"   height="300" >
+
 
 Install in Orange Pi zero Plus H5
 
