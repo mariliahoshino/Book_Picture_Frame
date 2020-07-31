@@ -23,7 +23,7 @@ In Orange Pi zero Plus
 https://github.com/mariliahoshino/Book_Picture_Frame/tree/master/OrangePiZeroPlus
 
 ### Orange Pi zero Pins <br>
-<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/esquema.png?raw=true"  height="300" > <br>
+<img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/esquema.png?raw=true"  height="700" > <br>
 
 source:
 
