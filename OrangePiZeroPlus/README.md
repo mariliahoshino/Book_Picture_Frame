@@ -142,6 +142,11 @@ https://cadernodelaboratorio.com.br/2015/06/10/inicializando-um-programa-automat
 https://www.vivaolinux.com.br/topico/XFCE/Como-fazer-pro-monitor-nao-desligar
 
 audio
+
+https://www.youtube.com/audiolibrary/music
+
+<!--
 https://soundcloud.com/higorpatinho/sets/lista-de-musicas-sem-direitos
 
 https://licensing.jamendo.com/pt/catalogo/instrumentos/popular/violino
+-->
