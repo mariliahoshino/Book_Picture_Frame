@@ -116,7 +116,8 @@ clicar em OK <br>
 Deverá ficar assim <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/015_20200730_190314.jpg?raw=true"   height="300" >
 
-
+For play music it is necessary a player <br>
+sudo apt-get install -y gnome-mplayer
 
 <!--
 
