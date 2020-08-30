@@ -55,25 +55,25 @@ Run the terminal <br>
 It will install updates <br>
 
 **Configurar para auto execução para mostrar as fotos** <br>
-1. Para instalar o pacote, use a seguinte linha: <br>
+1. To install the package, use the following line:: <br>
 `sudo apt-get install feh` <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/008_install_feh20200730_183648.jpg?raw=true"   height="300" > <br>
 
-2. Agora, para testar se ele funciona, digite a seguinte linha. Substitua **/root/Desktop/Fotos** pelo diretório que contém toda a sua imagem. <br>
+2. Now to test that it works enter the following line. Replace **/root/Desktop/Fotos** with the directory that contains all your image. <br>
 
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos` &
 <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/009_testeone20200730_184838.jpg?raw=true"   height="300" > <br>
 
-Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito mais curto. Você pode ler mais sobre todas as bandeiras que você pode usar na página de manual feh, ou usar normalmente a de cima <br>
+Extra 3. Now we can use short tags to make this command a lot shorter. You can read more about all the flags you can use over at the feh manual page.a <br>
 `DISPLAY=:0.0 XAUTHORITY=/home/pi/.Xauthority /usr/bin/feh -q -p -Z -F -R  60 -Y -D 15.0 /root/Desktop/Fotos`  &
 
-4. Agora, como você notará, isso trava a barra da linha de comando. Para corrigir isso, adicione o **&** após o comando e o script / processo será iniciado em segundo plano. <br>
+4. Now as you will notice this locks up the command line bar. To fix this, add the **&** after the command and the script/process will launch in the background. <br>
 
-5. Então agora vamos armazenar isso em um arquivo de script simples. Dessa forma, você pode adicionar ou alterar posteriormente. Para fazer o arquivo, digite o seguinte comando: <br>
+5. So now let’s store this in a simple script file. This way you can add or change it later. To make the file enter the following command:<br>
 `sudo nano /root/start-picture-frame.sh` <br>
 
-6. Aqui, digite as seguintes linhas. <br>
+6. In here, enter the following lines.. <br>
 `#!/bin/bash` <br>
 `DISPLAY=:0.0 XAUTHORITY=/root/.Xauthority /usr/bin/feh --quiet --randomize --full-screen --reload 60 -Y --slideshow-delay 15.0 /root/Desktop/Fotos`
 <br>
@@ -81,43 +81,42 @@ Extra 3. Agora se quiser podemos usar tags curtas para tornar esse comando muito
 
 **Ctrl + X** ->  **Y**  -> **enter**
 
-7. Agora pronto, você pode testá-lo executando o seguinte comando. <br>Irá rodar a exposição de fotos <br>
+7. Now that’s done you can test it by running the following command.. <br>It will run the picture frame <br>
 `bash /root/start-picture-frame.sh` <br>
 
-**Configurando para iniciar junto com o SO** <br>
+**Configuration for starte together with OS** <br>
 Aplication --> Settings --> Session and Startup
 <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/011_startup20200730_185910.jpg?raw=true"   height="300" >
 
 
-Aba **Aplication Autostart** <br>
-Clicar em Add <br>
-Vai abrir uma janela <br>
+tab **Aplication Autostart** <br>
+Click Add <br>
+Will open a window <br>
 Name: `Picture_frame` <br>
 Command: `bash /root/start-picture-frame.sh` <br>
-clicar em OK <br>
+Click OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/012_20200730_190043.jpg?raw=true"   height="300" >
 
 
-**Configurando para a tela não desligar** <br>
-Clicar em Add <br>
+**Configuration don't sleep display** <br>
+Click Add <br>
 Name: `dontsleep01` <br>
 Command:  `xset -dpms` <br>
 clicar em OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/013_20200730_190208.jpg?raw=true"   height="300" >
-
-Clicar em Add <br>
+Click Add <br>
 Name: `dontsleep02` <br>
 Command: `xset s off` <br>
-clicar em OK <br>
+Click OK <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/014_20200730_190251.jpg?raw=true"   height="300" >
 
 
-Deverá ficar assim <br>
+It should look like this <br>
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/015_20200730_190314.jpg?raw=true"   height="300" >
 
 For play music it is necessary a player <br>
-sudo apt-get install -y gnome-mplayer
+`sudo apt-get install -y gnome-mplayer`
 
 <!--
 
@@ -125,11 +124,12 @@ sudo apt-get install -y gnome-mplayer
 No final do arquivo insira o comando que irá executar, por exemplo:
 `bash /home/pi/start-picture-frame.sh &`       **&  é necessário**
 -->
-
+Restart thepicture frame start automatically
+<!--
 Salve e saia
 Reiniciando, deverá executar automaticamente
 Demora um puco até carregar as fotos 
-
+-->
 <img src="https://github.com/mariliahoshino/Book_Picture_Frame/blob/master/OrangePiZeroPlus/Pictures/016_20200730_190356.jpg?raw=true"   height="300" >
 
 Fontes 
