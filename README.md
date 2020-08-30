@@ -1,6 +1,9 @@
 # Book_Picture_Frame
 How to make a digital book picture frame with Orange Pi zero plus
 
+Video Project working
+https://www.instagram.com/p/CEfvHlfpcbH/
+
 ### My Pages 
 
 <a href="https://www.linkedin.com/in/mariliahoshino/"><img src="https://github.com/mariliahoshino/mariliahoshino/blob/master/profile/logo_linkedin.png?raw=true" height="50" widht="400"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
